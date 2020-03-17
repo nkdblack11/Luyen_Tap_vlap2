@@ -12,9 +12,29 @@
         document.write('</br>')
     }
     document.write('<br>')
-    for (let i = 5; i > 0; i--) {
-        document.write(kq.slice(0, i))
+    for (i=5;i>0;i--){
+        for (j=1; j<=i; j++)
+            document.write('*')
         document.write('</br>')
+    }
+    document.write('<br>')
+    let x =1
+    for (let i=1; i<=5; i++){
+        for (let j=1; j<=5-i; j++){
+            document.write('&nbsp&nbsp')
+        }
+        for (x=5-i; x<=4; x++){
+            document.write('*')
+        }document.write('<br/>')
+    }
+    document.write('<br>')
+    for (let i=5; i>0; i--){
+        for (let j=1; j<=5-i; j++){
+            document.write('&nbsp&nbsp')
+        }
+        for (let x=5-i; x<=4; x++){
+            document.write('*')
+        }document.write('<br/>')
     }
 </script>
 </body>
